@@ -1,0 +1,137 @@
+/* .kitisuru-nav{
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    left: 27%;
+    background: rgba(71, 71, 71, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 10;
+    border-radius: 30px;
+    height: 60px;
+    
+  } */
+   
+  ol{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+  }
+   ol li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  ol li a:hover{
+    color: gray;
+  }
+  .kitisuru-left-side{
+    background-image: url(images/shukas.jpg);
+    width: 50%;
+    height:100vh ;
+
+
+  }
+.kitisuru-left-side h2{
+    position: relative;
+    top: 250px;
+    left: 50%;
+    font-weight: 200px;
+    color: white;
+    font-size: 39px;
+}
+.kitisuru-left-side h1{
+    position: relative;
+    color: orangered;
+    top: 250px;
+    left: 46%;
+    font-size: 50px;
+    font-weight: 200px;
+}
+.kitisuru-home{
+    display: flex;
+    width: 100%;
+}
+
+.ankole-logo{
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    height: 250px;
+    z-index: 10;
+    width: 250px;
+}
+.nav{
+    position: absolute;
+    bottom: 0;
+    width: 45%;
+    left: 1%;
+    background: rgba(71, 71, 71, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 10;
+    border-radius: 30px;
+    height: 60px;
+    
+  }
+  .nav ul{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+  }
+   .nav li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav li a:hover{
+    color: gray;
+  }
+  .menu-list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .right-side-menu{
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+  }
+  .right-side-menu{
+    padding-left: 20px;
+  }
+  .menu-details h1{
+    color: orangered;
+  }
+  .menu-details{
+    color: white;
+  }
+  .right-side-menu h1{
+    color: orangered;
+
+  }
+  .right-side-menu p{
+    color: white;
+  }
+  body{
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
