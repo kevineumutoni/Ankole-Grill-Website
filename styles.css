@@ -3,7 +3,10 @@
 /* @media(min-width: 360px) and (max-width:480px){} */
 /* @media(min-width: 481px) and (max-width:768px){} */
 
-@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Boldonse&family=Lilita+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Unbounded:wght@200..900&family=UnifrakturMaguntia&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Boldonse&family=Lilita+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Unbounded:wght@200..900&family=UnifrakturMaguntia&display=swap'); */
+
+@import url(https://db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter+Normal);
+
 /* Responsive for mobile devices (general range) */
 @media (max-width: 768px) {
   .ankole-logo {
@@ -70,19 +73,16 @@ body{
 
 
 .hamburger {
-
   position: fixed;
-  display: none;
-  bottom: 10px;
-  left: 27%;
-  background-color: black;
-  color: white;
+  bottom: 13px;
+  left: 27.3%;
+  color: rgb(105, 105, 105);
   padding: 10px;
   border-radius: 50%;
   font-size: 20px;
+  font-weight: lighter;
   cursor: pointer;
   z-index: 1001;
-  
   }
 
   .hamburger i{
@@ -98,19 +98,19 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "American Typewriter Normal";
     display: flex;
 
 }
 /* the cow logo in the website */
 .ankole-logo{
-position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
-    height: 200px;
-    z-index: 10;
-    width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 200px;
+  z-index: 10;
+  width: 200px;
 }
 /* the div that is shared in all images that will control flow of images in the main page */
 /* each animation will take 25 seconds infinitely non-stop. */
@@ -167,30 +167,59 @@ position: absolute;
   }
   
   .banner-text h1 {
-    font-size: 100px;
+    font-size: 120px;
     color: rgb(138, 136, 136);
 
   }
   nav{
     position: fixed;
     bottom: 2px;
-    width: 45%;
+    width: 45.5%;
+    color: rgb(255, 255, 255);
     left: 27%;
     display: flex;
-    justify-content: center;
-    background-color: black;
+    justify-content: right;
+    background-color: rgb(14,14,14);
     border-radius: 25px;
     /* padding: 0px 10px; */
     z-index: 10;
     border-radius: 30px;
     /* max-width: 1000px; */
     height: 70px;
-    
+  }
+  #reserve{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    /* padding: 8px 14px; */
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #reserve:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+  #clock{
+    position:absolute;
+    bottom: 13.8px;
+    left: 29.5%;
+
+    color: rgb(117, 116, 116);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2001;
   }
   ul{
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap:10px;
     padding: 0;
     list-style: none;
     align-items: center;
@@ -199,10 +228,9 @@ position: absolute;
   }
    li a{
     text-decoration: none;
-    color: white;
-    background-color: rgb(24, 23, 23);
+    color:lightgray;   
     /* padding: 8px 14px; */
-    border-radius: 10px;
+    border-radius: 1px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
@@ -231,6 +259,7 @@ position: absolute;
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
+    color: white;
   }
   nav {
     background: transparent;
@@ -273,5 +302,8 @@ position: absolute;
     font-size: 60px;
     color: rgb(2, 2, 2);
  
+  }
+  #clock{
+    display: none;
   }
 }

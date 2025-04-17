@@ -21,19 +21,17 @@
     display: flex;
 }
 .hamburger {
-
     position: fixed;
-    display: none;
-    bottom: 20px;
-    left: 20px;
-    background-color: black;
-    color: white;
+    bottom: 13px;
+    left: 27.3%;
+    color: rgb(105, 105, 105);
     padding: 10px;
     border-radius: 50%;
-    font-size: 40px;
+    font-size: 29px;
+    font-weight: lighter;
     cursor: pointer;
     z-index: 1001;
-  }
+    }
   .whatsapp-icon{
     position: absolute;
     right: 100px;
@@ -119,37 +117,69 @@ body{
 }
 nav{
     position: fixed;
-    bottom: 10px;
-    width: 45%;
+    bottom: 2px;
+    width: 45.5%;
+    color: gray;
     left: 27%;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: right;
+    background-color: black;
+    border-radius: 25px;
+    /* padding: 0px 10px; */
     z-index: 10;
     border-radius: 30px;
-    background-color: black;
-
-    height: 60px;
-    
+    /* max-width: 1000px; */
+    height: 70px;
   }
-  ul{
-    display: flex;
-    justify-content: space-between;
-    gap:20px;
-    padding: 0;
-    list-style: none;
-    padding-top: 10px;
-    
-  }
-   li a{
+  #reserve{
     text-decoration: none;
     color: white;
     background-color: rgb(24, 23, 23);
+    /* padding: 8px 14px; */
     border-radius: 10px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.3s;
+  }
+  #reserve:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+  #clock{
+    position:absolute;
+    bottom: 14px;
+    left: 29.9%;
+
+    color: rgb(117, 116, 116);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2001;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+  }
+   li a{
+    text-decoration: none;
+    color:lightgray;   
+    /* padding: 8px 14px; */
+    border-radius: 1px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
   }
   li a:hover{
     color: gray;
@@ -239,6 +269,7 @@ body{
 @media (max-width: 1024px) {
     .hamburger {
       display: block;
+      color: white;
     }
     nav {
       background: transparent;
@@ -367,5 +398,8 @@ body{
         font-size: 20px;
         font-weight: 200px;
         font-weight: bolder;
+    }
+    #clock{
+        display: none;
     }
   }

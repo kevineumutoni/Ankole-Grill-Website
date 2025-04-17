@@ -10,11 +10,21 @@ body{
     background-position: center;
     background-size: cover;
     margin-top: -16px;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
 
     
 }
+.live-text h1{
+    position: absolute;
+    top:20px;
+
+}
+.live-text p{
+    position: absolute;
+    top: 10px;
+}
+
 
 .live-img1{
     width: 100%;
@@ -107,39 +117,87 @@ body{
 }
 nav{
     position: fixed;
-   bottom: 100px;
-    width: 45%;
-    left: 1%;
+    bottom: 40px;
+    width: 45.5%;
+    color: rgb(255, 255, 255);
+    left: 2%;
     display: flex;
-    background-color: rgb(7, 7, 7);
-    justify-content: center;
-    padding: 10px 0px;
+    justify-content: right;
+    background-color: rgb(14,14,14);
+    border-radius: 25px;
+    /* padding: 0px 10px; */
     z-index: 10;
     border-radius: 30px;
-    height: 60px;
-    
+    /* max-width: 1000px; */
+    height: 70px;
   }
-  ul{
-    display: flex;
-    justify-content: space-between;
-    gap:20px;
-    padding: 0;
-    list-style: none;
-    padding-top: 10px;
-  }
-   li a{
+  #reserve{
     text-decoration: none;
     color: white;
     background-color: rgb(24, 23, 23);
+    /* padding: 8px 14px; */
     border-radius: 10px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.3s;
+  }
+  #reserve:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+  #clock{
+    position:absolute;
+    bottom: 53.5px;
+    left: 4.9%;
+    position: fixed;
+
+    color: rgb(117, 116, 116);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2001;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+  }
+   li a{
+    text-decoration: none;
+    color:lightgray;   
+    /* padding: 8px 14px; */
+    border-radius: 1px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
   }
   li a:hover{
     color: gray;
   }
+  .hamburger {
+    position: fixed;
+    bottom: 53px;
+    left: 2.5%;
+    color: rgb(105, 105, 105);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: lighter;
+    cursor: pointer;
+    z-index: 1001;
+    }
+
   .ankole-logo{
     position: absolute;
     top: 20px;
@@ -165,9 +223,74 @@ nav{
         width: 100%;
         height: 50%;
     }
-    nav ul{
+    nav{
+        position: fixed;
+        bottom: 2px;
+        width: 45.5%;
+        color: rgb(255, 255, 255);
+        left: 27%;
         display: flex;
-        flex-direction: column;
-    }
+        justify-content: right;
+        background-color: rgb(14,14,14);
+        border-radius: 25px;
+        /* padding: 0px 10px; */
+        z-index: 10;
+        border-radius: 30px;
+        /* max-width: 1000px; */
+        height: 70px;
+      }
+      #reserve{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(24, 23, 23);
+        /* padding: 8px 14px; */
+        border-radius: 10px;
+        transition: 0.3s ease;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #reserve:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+      }
+      #clock{
+        position:absolute;
+        bottom: 13.8px;
+        left: 29.5%;
+    
+        color: rgb(117, 116, 116);
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 2001;
+      }
+      ul{
+        display: flex;
+        justify-content: space-between;
+        gap:10px;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+      }
+       li a{
+        text-decoration: none;
+        color:lightgray;   
+        /* padding: 8px 14px; */
+        border-radius: 1px;
+        transition: 0.3s ease;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      li a:hover{
+        color: gray;
+      }
 
 }

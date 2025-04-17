@@ -10,6 +10,8 @@
 <body>
     <body>
         <!-- menu -->
+        <i class="fa-solid fa-clock" id="clock"></i>
+
         <div class="hamburger" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
           </div>
@@ -52,13 +54,13 @@
                 <li><a href="event.html">Events</a></li>
                 <li><a href="live.html">Live</a></li>
                 <li><a href="contact.html">Contacts</a></li>
-                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="reservation.html" id="reserve">Reservations</a></li>
             </ul>
         </nav>
           
           
           <script>
-         //menu that will appear in small devices.
+         //menu that will appear in small devices only!!.
             function toggleMenu() {
                 document.getElementById("navLinks").classList.toggle("active");
               }

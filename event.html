@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankole Grill website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="event.css">
 </head>
 <body>
+    <i class="fa-solid fa-clock" id="clock"></i>
+    <!-- menu icon in the small devices -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
     <!-- Events section -->
      <div>
     <div class="events">
@@ -42,19 +49,26 @@
             <p>0703 212 121</p>
             <p>0701 138 345</p>
         </div>
+        
     </div>
     <nav>
-        <ul>
+        <ul id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="review.html">Reviews</a></li>
             <li><a href="event.html">Events</a></li>
             <li><a href="live.html">Live</a></li>
             <li><a href="contact.html">Contacts</a></li>
-            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="reservation.html" id="reserve">Reservations</a></li>
         </ul>
     </nav>
 </div>
+
+<script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
     
 </body>
 </html>

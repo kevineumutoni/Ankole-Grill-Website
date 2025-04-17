@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="live.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+    <div class="live-text">
+        <h1>Tukatike</h1>
+        <p>Live</p>
+    </div>
+
+    <i class="fa-solid fa-clock" id="clock"></i>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
     <a href="index.html"><img src="images/ankole-logo.png" class="ankole-logo"></a>
 
     <div class="live-section">
@@ -33,19 +45,33 @@
                 <p>April 30, 2025</p>
                 <h1>Live Acoustic<br> Wednesday - FADHILEE</h1>
             </div>
+            
         </div>
+        <div class="live3">
+            <div class="live-img3"><img src="images/women.jpg"></div>
+            <div class="live-details1">
+                <p>April 30, 2025</p>
+                <h1>Live Acoustic<br> Wednesday - FADHILEE</h1>
+            </div>
         <nav>
-            <ul>
+            <ul id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="review.html">Reviews</a></li>
                 <li><a href="event.html">Events</a></li>
                 <li><a href="live.html">Live</a></li>
                 <li><a href="contact.html">Contacts</a></li>
-                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="reservation.html" id="reserve">Reservations</a></li>
             </ul>
         </nav>
 
     </div>
+    <script>
+        //menu that will appear in small devices only!!.
+           function toggleMenu() {
+               document.getElementById("navLinks").classList.toggle("active");
+             }
+    </script>
+
 </body>
 </html>
