@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter+Normal);
 .registration{
     display: flex;
 
@@ -57,6 +58,7 @@ button:hover{
     color: orangered;
     bottom: 300px;
     font-size: 70px;
+    font-family: "American Typewriter Normal";
     position: absolute;
     left: 320px;
 }
@@ -71,31 +73,20 @@ button:hover{
 nav{
     position: fixed;
     bottom: 2px;
-    width: 45%;
+    width: 45.5%;
+    color: rgb(255, 255, 255);
     left: 2%;
     display: flex;
-    justify-content: center;
-    background-color: black;
+    justify-content: right;
+    background-color: rgb(14,14,14);
     border-radius: 25px;
     /* padding: 0px 10px; */
     z-index: 10;
     border-radius: 30px;
     /* max-width: 1000px; */
     height: 70px;
-
-    
   }
-  ul{
-    display: flex;
-    justify-content: space-between;
-    gap:20px;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-    padding: 10px;
-    margin: 0;
-  }
-   li a{
+  #reserve{
     text-decoration: none;
     color: white;
     background-color: rgb(24, 23, 23);
@@ -107,6 +98,126 @@ nav{
     cursor: pointer;
     transition: 0.3s;
   }
+  #reserve:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+  #clock{
+    position:absolute;
+    bottom: 13.8px;
+    left: 5%;
+    position: fixed;
+
+    color: rgb(117, 116, 116);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 27px;
+    cursor: pointer;
+    z-index: 2001;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+  }
+   li a{
+    text-decoration: none;
+    color:lightgray;   
+    /* padding: 8px 14px; */
+    border-radius: 1px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
   li a:hover{
     color: gray;
   }
+  .hamburger {
+    position: fixed;
+    bottom: 13px;
+    left: 2.9%;
+    color: rgb(105, 105, 105);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+
+    font-weight: lighter;
+    cursor: pointer;
+    z-index: 1001;
+    }
+    @media (max-width: 1024px) {
+        .hamburger {
+          display: block;
+          color: white;
+        }
+        nav {
+          background: transparent;
+          width: auto;
+        }
+        nav ul {
+          display: none;
+          flex-direction: column;
+          position: fixed;
+          bottom: 80px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #111;
+          width: 80%;
+          border-radius: 15px;
+          padding: 15px 0;
+        }
+        nav ul.active {
+          display: flex;
+        }
+        nav ul li {
+          margin: 10px 0;
+        }
+        nav ul li a {
+          width: 100%;
+          display: block;
+        }
+        .ankole-logo{
+          width: 100px;
+          height: 100px;
+          left: 130px;
+          top:10px
+        }
+        #clock{
+          display: none;
+        }
+        .registration{
+            display: flex;
+            flex-direction: column;
+        }
+        .reserve img{
+            width: 90%;
+        }
+        .reserve h1{
+            top:150px;
+            left: 80px;
+            font-size: 35px;
+        }
+        .reserve h2{
+            top:100px;
+            left: 130px;
+            font-size: 25px;
+        }
+        input{
+            width: 280px;
+        }
+        .select{
+            width: 280px;
+        }
+        button{
+            width: 280px;
+        }
+      }
+      
