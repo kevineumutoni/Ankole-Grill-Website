@@ -1,20 +1,27 @@
 .nairobi-pavilion{
     background-image: url(images/balcony.jpg);
-    filter: brightness(80%);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/balcony.jpg);
     height: 100vh;
     width: 100%;
 
 }
+.nairobi-pavilion::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(46, 45, 45, 0.4); /* adjust darkness here */
+    z-index: 1;
+  }
+  
 .accra-pavilion{
     background-image: url(images/decoration-table.jpg);
     height: 100vh;
-    filter: brightness(80%);
     width: 100%;
 }
 .zanzibar-pavilion{
     background-image: url(images/dinning-table.jpg);
     height: 100vh;
-    filter: brightness(100%);
     width: 100%;
     
 }
@@ -23,27 +30,115 @@
 }
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 .ankole-logo{
     position: absolute;
     top: 20px;
     left: 45%;
-    height: 300px;
+    height: 200px;
     z-index: 10;
-    width: 300px;
+    width: 200px;
 }
 .nairobi-pavilion h1{
     font-size: 40px;
     position: relative;
-    left: 40px;
-    top:100px;
+    left: 100px;
+    top:200px;
     color: white;
+    font-weight: bolder;
 }
 .nairobi-pavilion p{
     position: relative;
     font-size: 20px;
-    left: 40px;
-    top:100px;
-    color: orange;
+    left: 100px;
+    top:310px;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
 }
+.accra-pavilion h1{
+    font-size: 40px;
+    position: relative;
+    left: 250px;
+    top:200px;
+    color: white;
+
+}
+.accra-pavilion p{
+    position: relative;
+    font-size: 20px;
+    left: 260px;
+    top:210px;
+    color: rgb(245, 246, 248);
+    font-weight: bolder;
+}
+.zanzibar-pavilion p{
+    position: relative;
+    font-size: 20px;
+    left: 210px;
+    top:210px;
+    color: rgb(173, 174, 175);
+    font-weight: bolder;
+}
+.zanzibar-pavilion h1{
+    font-size: 40px;
+    position: relative;
+    left: 200px;
+    top:200px;
+    color: rgb(194, 192, 192);
+}
+nav{
+    position: absolute;
+    width: 45%;
+    left: 27%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 10;
+    border-radius: 30px;
+    height: 60px;
+    bottom: 0;
+    
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+  }
+   li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  li a:hover{
+    color: gray;
+  }
+  @media (max-width: 602px){
+    .events{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    }
+    .nairobi-pavilion p{
+        display: none;
+    }
+    .accra-pavilion p{
+        display: none;
+    }
+    .zanzibar-pavilion p{
+        display: none;
+    }
+
+  }

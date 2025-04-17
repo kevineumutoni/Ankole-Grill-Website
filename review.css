@@ -1,96 +1,226 @@
-.ankole-logo{
-    position: absolute;
-    top: 20px;
-    left: 42%;
-    height: 300px;
-    z-index: 10;
-    width: 300px;
-}
-.reviews-section{
-    width: 45%;
-    position: relative;
+.reviews-section {
     text-align: center;
-    top:280px;
-    left: 26%;
-}
-.reviews-section h1{
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 500px;
-}
-.reviews-section p{
-    text-align: center;
-    color: white;
-    font-weight: 500px;
-    font-size: 27px;
-}
-#icon1{
-    position: relative;
-    left: 450px;
-    top:520px;
-    font-size: 30px;
-    color: rgb(92, 90, 90);
-}
-#icon2{
-    position: relative;
-    top: 520px;
-    left: 72%;
-    font-size: 30px;
-    color: rgb(92, 90, 90);
-
-}
-body{
- background-color: rgb(0, 0, 0);   
-}
-#icon4{
-    color: orangered;
-    position: relative;
-    top:410px;
-    left: 20%;
-    font-size: 50px;
-}
-#icon3{
-    color: orangered;
-    position: relative;
-    top:650px;
-    left: 70%;
-    font-size: 50px;
- 
-}
-nav{
-    position: absolute;
- 
-    width: 100%;
-
-    background: rgba(71, 71, 71, 0.6);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    z-index: 10;
-    border-radius: 30px;
-    height: 60px;
+    padding: 40px 20px;
+    background-color: #000000;
     
+
   }
-  ul{
-    display: flex;
-    justify-content: space-between;
-    gap:20px;
-    padding: 0;
-    list-style: none;
-    padding-top: 10px;
+  .ankole-logo{
+    position: absolute;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    z-index: 10;
+    width: 200px;
+      }
+  .review-carousel {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    top: 200px;
   }
-   li a{
-    text-decoration: none;
+  
+  .review {
+    display: none;
+    font-size: 1.4rem;
+    padding: 20px;
+  }
+  
+  .review.active {
+    display: block;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #fffafa;
+  }
+  
+  .author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  nav{
+      position: fixed;
+      bottom: 2px;
+      width: 50%;
+      left: 27%;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      border-radius: 25px;
+      /* padding: 0px 10px; */
+      z-index: 10;
+      border-radius: 30px;
+      /* max-width: 1000px; */
+      height: 70px;
+  
+      
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      gap:20px;
+      padding: 0;
+      list-style: none;
+      align-items: center;
+      padding: 10px;
+      margin: 0;
+    }
+     li a{
+      text-decoration: none;
+      color: white;
+      background-color: rgb(24, 23, 23);
+      /* padding: 8px 14px; */
+      border-radius: 10px;
+      transition: 0.3s ease;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    li a:hover{
+      color: gray;
+    }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
     color: white;
-    background-color: rgb(24, 23, 23);
-    border-radius: 10px;
-    transition: 0.3s ease;
-    padding: 10px 20px;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 360px
+  }
+  
+  .next {
+    right: 420px;
+  }
+  body{
+      background-color: #000000;
+  }
+  #icon4{
+      color: orangered;
+      position: relative;
+      top:350px;
+      left: 20%;
+      font-size: 50px;
+  }
+  #icon3{
+      color: orangered;
+      position: relative;
+      top:580px;
+      left: 70%;
+      font-size: 50px;
+   
+  }
+  .hamburger {
+
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    left: 27%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
+    z-index: 1001;
+    
+    }
+  
+    .hamburger i{
+      font-size: 30px;
+    }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .review-carousel {
+      max-width: 100%;
+      width: 100%;
+   
+
+    }
+    #icon4{
+        top: 200px;
+        left: 10px;
+    }
+    #icon3{
+        top:700px;
+    }
+    .review-carousel{
+        top:50px;
+    }
+  
+    .quote {
+      font-size: 1.5rem;
+    }
+    .author{
+        font-size: 1rem;
+    }
+  
+    .prev, .next {
+      font-size: 1.2rem;
+      padding: 8px 12px;
+    }
   }
-  li a:hover{
-    color: gray;
+
+  @media (max-width: 1024px) {
+    .hamburger {
+      display: block;
+    }
+    nav {
+      background: transparent;
+      width: auto;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #111;
+      width: 80%;
+      border-radius: 15px;
+      padding: 15px 0;
+    }
+    nav ul.active {
+      display: flex;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    nav ul li a {
+      width: 100%;
+      display: block;
+    }
+    .ankole-logo{
+      width: 100px;
+      height: 100px;
+    }
+    .banner-text h1{
+      font-size: 35px;
+    }
+    .whatsapp-icon{
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      color: rgb(255, 255, 255);
+      font-size: 60px;
+      color: rgb(2, 2, 2);
+   
+    }
   }
   

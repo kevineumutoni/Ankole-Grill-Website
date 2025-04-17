@@ -1,0 +1,112 @@
+.registration{
+    display: flex;
+
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+label{
+    display: block;
+    color: white;
+    padding-left: 50px;
+    padding-top: 50px;
+
+}
+input{
+    width: 800px;
+    display: block;
+    height: 50px;
+    color: white;
+    margin-left: 50px;
+    background-color: black;
+    color-scheme: dark;
+}
+button{
+    width: 810px;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 50px;
+    background-color: wheat;
+    font-size: 20px;
+    margin-top: 50px;
+}
+button:hover{
+    background-color: rgb(150, 109, 32);
+    color: white;
+}
+.select{
+    width: 800px;
+    display: block;
+    height: 50px;
+    color: rgb(151, 143, 143);
+    margin-left: 50px;
+    background-color: black;
+}
+
+.ankole-logo{
+    position: absolute;
+    top: 30px;
+    left: 20%;
+    height: 200px;
+    z-index: 10;
+    width: 200px;
+    position: fixed;
+}
+.reserve h1{
+    color: orangered;
+    bottom: 300px;
+    font-size: 70px;
+    position: absolute;
+    left: 320px;
+}
+.reserve h2{
+    color: white;
+    position: absolute;
+    bottom: 400px;
+    left: 400px;
+    font-size: 40px;
+    text-align: center;
+}
+nav{
+    position: fixed;
+    bottom: 2px;
+    width: 45%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 25px;
+    /* padding: 0px 10px; */
+    z-index: 10;
+    border-radius: 30px;
+    /* max-width: 1000px; */
+    height: 70px;
+
+    
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+  }
+   li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    /* padding: 8px 14px; */
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  li a:hover{
+    color: gray;
+  }

@@ -58,8 +58,8 @@
     font-weight: 200px;
 }
 .kitisuru-home{
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .ankole-logo{
@@ -75,7 +75,6 @@
     bottom: 0;
     width: 45%;
     left: 1%;
-    background: rgba(71, 71, 71, 0.6);
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -135,3 +134,26 @@
     overflow-y: hidden;
     overflow-x: hidden;
   }
+  @media (max-width: 602px) {
+    .nav ul{
+      display: flex;
+      flex-direction: column
+    }
+    .nav{
+      bottom: 300px;
+    }
+    .kitisuru-home{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .kitisuru-left-side{
+      width: 100%;
+    }
+    .right-side-menu{
+      width: 100%;
+    }
+    
+    
+
+    }

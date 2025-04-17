@@ -1,0 +1,173 @@
+body{
+    overflow-x: hidden;
+}
+.live-section{
+    background-image: url(images/Ankore-inside.jpg);
+    height: 130vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    
+}
+
+.live-img1{
+    width: 100%;
+    height: 100;
+    position: absolute;
+
+}
+
+.live-img1 img{
+    width: 50%;
+    height: 30%;
+}
+.live-img2 img{
+    width: 100px;
+    height: 100px;
+}
+.live1{
+
+    width: 30%;
+    height: 35vh;
+    position: relative;
+    top:100px;
+    left:60%;
+
+}
+.live-details1{
+    width: 100%;
+    color: wheat;
+    position: relative;
+    left: 300px;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.live-img2{
+    width: 100%;
+    height: 100;
+    position: absolute;
+
+}
+
+.live-img2 img{
+    width: 50%;
+    height: 30%;
+}
+
+.live2{
+
+    width: 30%;
+    height: 35vh;
+    position: relative;
+    top:100px;
+    left:60%;
+
+}
+.live-details1{
+    width: 100%;
+    color: wheat;
+    position: relative;
+    left: 300px;
+}
+/* live3 */
+.live-img3{
+    width: 100%;
+    height: 100;
+    position: absolute;
+
+}
+
+.live-img3 img{
+    width: 50%;
+    height: 30%;
+}
+
+.live3{
+
+    width: 30%;
+    height: 35vh;
+    position: relative;
+    top:100px;
+    left:60%;
+
+}
+.live-details1{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 300px;
+}
+nav{
+    position: fixed;
+   bottom: 100px;
+    width: 45%;
+    left: 1%;
+    display: flex;
+    background-color: rgb(7, 7, 7);
+    justify-content: center;
+    padding: 10px 0px;
+    z-index: 10;
+    border-radius: 30px;
+    height: 60px;
+    
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+  }
+   li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  li a:hover{
+    color: gray;
+  }
+  .ankole-logo{
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    height: 200px;
+    z-index: 10;
+    width: 200px;
+    position: fixed;
+}
+@media (max-width: 602px){
+    .live-img2 img{
+        width: 100%;
+        height: 50%;
+
+    }
+    .live-img1 img{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        top:200px;
+    }
+    .live-img3 img{
+        width: 100%;
+        height: 50%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

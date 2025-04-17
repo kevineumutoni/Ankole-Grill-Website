@@ -8,35 +8,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <body>
+        <!-- menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+
     <a href="index.html"><img src="images/ankole-logo.png" class="ankole-logo"></a>
-    <a href="reviewTwo.html"><i class="fa-solid fa-less-than" id="icon1"></i></a>
-    <a href="reviewOne.html"><i class="fa-solid fa-greater-than" id="icon2"></i></a>
     <a><i class="fa-solid fa-quote-right" id="icon3"></i></a>
     <a><i class="fa-solid fa-quote-left" id="icon4"></i></a>
-
-
+    
+    
     <div class="reviews-section">
-        <h1>Reviews</h1>
-        <!-- greater than -->
-        <!-- less than -->
-        <p>This place is run by educated, innovative & creative people! The architectural
-             layout, seating, ambience, lighting, cutlery:servings, design; has been impeccably well thought out! 
-            Even the washroom were excellent! The food was AWESOME! This is surprising considering the fact 
-            we were there on a Saturday night & they almost had no space! We were extremely well serviced too!
-             Rare to find such finesse in Kenya! You must go visit them!<br><br>Irfan Virji <br> KITISIRU
-        </p>
-        <nav>
-            <ul>
+        <h2>Reviews</h2>
+        <div class="review-carousel">
+              <div class="review active">
+                <p class="quote">"This place is run by educated, innovative & creative people! The architectural
+                    layout, seating, ambience, lighting, cutlery:servings, design; has been impeccably well thought out! 
+                   Even the washroom were excellent! The food was AWESOME! This is surprising considering the fact 
+                   we were there on a Saturday night & they almost had no space! We were extremely well serviced too!
+                    Rare to find such finesse in Kenya! You must go visit them!</p>
+                <p class="author">Irfan Virji <br> KITISIRU</p>
+              </div>
+              <div class="review">
+                <p class="quote">"Best place to eat out. If you want to have a nice romantic date this place is perfect. The food is fantastic only be careful cause the portions are bigger than you would expect."</p>
+                <p class="author">Vladimiro Stivali<br>KITISIRU</p>
+              </div>
+              <div class="review">
+                <p class="quote">"Love this place, excellent food, filling portions, great service! Would 100% recommend."</p>
+                <p class="author">Harshita Jethani<br>KILIMANI</p>
+              </div>
+          
+      
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+          <nav>
+            <ul id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="review.html">Reviews</a></li>
-                <li><a>Events</a></li>
-                <li><a>Live</a></li>
-                <li><a>Contacts</a></li>
-                <li><a>Reservations</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
             </ul>
         </nav>
-    </div>
-    
+          
+          
+          <script>
+         //menu that will appear in small devices.
+            function toggleMenu() {
+                document.getElementById("navLinks").classList.toggle("active");
+              }
+
+            const reviews = document.querySelectorAll(".review");
+            const nextBtn = document.querySelector(".next");
+            const prevBtn = document.querySelector(".prev");
+          
+            let currentReview = 0;
+          
+            function showReview(index) {
+              reviews.forEach((review, i) => {
+                review.classList.toggle("active", i === index);
+              });
+            }
+          
+            nextBtn.addEventListener("click", () => {
+              currentReview = (currentReview + 1) % reviews.length;
+              showReview(currentReview);
+            });
+          
+            prevBtn.addEventListener("click", () => {
+              currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+              showReview(currentReview);
+            });
+          
+            //this is optional  auto-play every 10 seconds 
+            setInterval(() => {
+            currentReview = (currentReview + 1) % reviews.length;
+            showReview(currentReview);
+            },10000);
+          </script>
+        
 </body>
 </html>

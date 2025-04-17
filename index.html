@@ -1,5 +1,7 @@
 <!-- Goal today on 13th/April I want to finish the home page -->
  <!-- Goal today on 14th April is to finish the menu and reviews page -->
+  <!-- Goal today on 15th April is to finish the website I am left with live, contacts, and reservation -->
+   <!-- If it's possible I can add the responsiveness!!! -->
   
 <!DOCTYPE html>
 <html lang="en">
@@ -7,9 +9,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankole Grill Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- menu icon in the small devices -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      
     <div class="banner">
         <!-- the cow head in the website -->
         <a href="index.html"><img src="images/ankole-logo.png" class="ankole-logo"></a>
@@ -19,40 +27,46 @@
         <!-- first image in the banner and its relevant texts -->
 
         <div class="home banner-img"> 
-            <div class="banner-text"><h1>Welcome to Ankole grill</h1></div>
+            <div class="banner-text"><h1>Welcome</h1></div>
         </div>
         <!-- second slide image  of indoor house showing light -->
 
         <div class=" home banner-img2">
-            <div class="banner-text"><h1>Authentic East African Taste</h1></div>
+            <div class="banner-text"><h1>Discover</h1></div>
         </div>
         <!-- Third image in the home page showing chips and meat  -->
 
         <div class="home banner-img3">
-            <div class="banner-text"><h1>Dine. Celebrate. Experience</h1></div>
+            <div class="banner-text"><h1>Experience</h1></div>
         </div>
         <!-- Forth image in the home page showing red thing in a cup  -->
 
         <div class="home banner-img4">
-            <div class="banner-text"><h1>Flavors of Africa</h1></div>
+            <div class="banner-text"><h1>Taste</h1></div>
         </div>
          <!-- Fifth image in the home page showing the raw veggies and the sauce -->
 
         <div class="home banner-img5">
-            <div class="banner-text"><h1>Join Us Today</h1></div>
+            <div class="banner-text"><h1>Savour</h1></div>
         </div>
     </div>
     <nav>
-        <ul>
+        <ul id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="review.html">Reviews</a></li>
-            <li><a>Events</a></li>
-            <li><a>Live</a></li>
-            <li><a>Contacts</a></li>
-            <li><a>Reservations</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="live.html">Live</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
         </ul>
     </nav>
     </div>
+    <div class="whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></i></div>
+    <script>
+        function toggleMenu() {
+          document.getElementById("navLinks").classList.toggle("active");
+        }
+      </script>
 </body>
 </html>
