@@ -94,7 +94,7 @@ nav{
     color: rgb(117, 116, 116);
     padding: 10px;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 26px;
     cursor: pointer;
     z-index: 2001;
   }
@@ -129,7 +129,7 @@ nav{
     color: rgb(105, 105, 105);
     padding: 10px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: lighter;
     cursor: pointer;
     z-index: 1001;

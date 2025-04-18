@@ -23,6 +23,12 @@ input{
     background-color: black;
     color-scheme: dark;
 }
+input:hover{
+  border: green solid 1px;
+}
+.select:hover{
+  border: green solid 1px;
+}
 button{
     width: 810px;
     height: 70px;
@@ -219,5 +225,12 @@ nav{
         button{
             width: 280px;
         }
+        input:hover{
+          border: green solid 1px;
+        }
+        .select:hover{
+          border: green solid 1px;
+        }
+        
       }
       

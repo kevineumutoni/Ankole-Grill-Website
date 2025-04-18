@@ -51,7 +51,7 @@
   }
   nav{
     position: fixed;
-    bottom: 3px;
+    bottom: 60px;
     width: 45.5%;
     color: rgb(255, 255, 255);
     left: 27%;
@@ -84,7 +84,7 @@
   }
   #clock{
     position:absolute;
-    bottom: 13.8px;
+    bottom: 69px;
     left: 29.7%;
 
     color: rgb(117, 116, 116);
@@ -159,7 +159,7 @@
   }
   .hamburger {
     position: fixed;
-    bottom: 13px;
+    bottom: 68.5px;
     left: 27.3%;
     color: rgb(105, 105, 105);
     padding: 10px;

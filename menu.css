@@ -22,12 +22,12 @@
 }
 .hamburger {
     position: fixed;
-    bottom: 13px;
+    bottom: 70px;
     left: 27.3%;
     color: rgb(105, 105, 105);
     padding: 10px;
     border-radius: 50%;
-    font-size: 29px;
+    font-size: 25px;
     font-weight: lighter;
     cursor: pointer;
     z-index: 1001;
@@ -117,7 +117,7 @@ body{
 }
 nav{
     position: fixed;
-    bottom: 2px;
+    bottom: 60px;
     width: 45.5%;
     color: gray;
     left: 27%;
@@ -150,13 +150,13 @@ nav{
   }
   #clock{
     position:absolute;
-    bottom: 14px;
+    bottom: 71px;
     left: 29.9%;
 
     color: rgb(117, 116, 116);
     padding: 10px;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 25px;
     cursor: pointer;
     z-index: 2001;
   }

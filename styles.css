@@ -74,12 +74,12 @@ body{
 
 .hamburger {
   position: fixed;
-  bottom: 13px;
+  bottom: 70px;
   left: 27.3%;
   color: rgb(105, 105, 105);
   padding: 10px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: lighter;
   cursor: pointer;
   z-index: 1001;
@@ -101,6 +101,15 @@ body{
     font-family: "American Typewriter Normal";
     display: flex;
 
+}
+.icons{
+  position: absolute;
+  top:60px;
+  z-index: 1000;
+  right: 40px;
+  font-size: 30px;
+  color: rgb(148, 144, 144);
+  border: none;
 }
 /* the cow logo in the website */
 .ankole-logo{
@@ -173,7 +182,7 @@ body{
   }
   nav{
     position: fixed;
-    bottom: 2px;
+    bottom: 60px;
     width: 45.5%;
     color: rgb(255, 255, 255);
     left: 27%;
@@ -206,8 +215,8 @@ body{
   }
   #clock{
     position:absolute;
-    bottom: 13.8px;
-    left: 29.5%;
+    bottom: 70.8px;
+    left: 29.7%;
     position: fixed;
 
     color: rgb(117, 116, 116);
@@ -243,11 +252,13 @@ body{
   }
   .whatsapp-icon{
     position: absolute;
-    right: 100px;
-    bottom: 0;
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    color: rgb(2, 2, 2);
+    right: 60px;
+    bottom: 70px;
+    color: rgb(207, 203, 203);
+    font-size: 40px;
+    background-color: rgb(2, 2, 2);
+    border-radius: 100px;
+    padding: 10px;
  
   }
   /* Day 1 overr */
@@ -302,9 +313,11 @@ body{
     color: rgb(255, 255, 255);
     font-size: 60px;
     color: rgb(2, 2, 2);
+    display: none;
  
   }
   #clock{
     display: none;
   }
 }
+
