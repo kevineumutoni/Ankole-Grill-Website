@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankole Grill website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="kitisuru.css">
 </head>
 <body>
+
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleDropdown()">
+                <i class="fa-solid fa-bars" ></i>
+                <div class="vertical-menu" id="dropdown">
+                   <a href="index.html">Home</a>
+                   <a href="index.html">Our Story</a>
+                   <a href="menu.html">Menu</a>
+                   <a href="reviews.html">Reviews</a>
+                   <a href="index.html">Careers</a>
+                   <a href="events.html">Events</a>
+                   <a href="index.html">Gallery</a>
+                   <a href="live.html">Live </a>
+                   <a href="contacts.html">Contacts</a>
+                </div>
+
+            </div>
+           
+           <div>
+                <i class="fas fa-clock"></i>
+        
+           </div>
+           <a href="/index.html" class="navlink active">Home</a>
+           <a href="/menu.html" class="navlink" id="menu">Menu</a>
+           <a href="/reviews.html" class="navlink">Reviews</a>
+           <a href="/events.html" class="navlink">Events</a>
+           <a href="/live.html" class="navlink">Live</a>
+           <a href="/contacts.html" class="navlink">Contacts</a>
+           <a href="/reservation.html" class="navlink">Reservations</a>  
+       </nav>
+   </header>
+
+
     
     <div class="kitisuru-home">
         <!-- the div on the left side of the site -->
@@ -15,17 +51,7 @@
             <a href="index.html"><img src="images/ankole-logo.png" class="ankole-logo"></a>
             <h2>Menu</h2>
             <h1>Kitisuru</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="review.html">Reviews</a></li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="live.html">Live</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a href="reservation.html">Reservations</a></li>
-                </ul>
-            </nav>
+            
         </div>
          <!-- right side of the kitisuru menu -->
             <div class="right-side-menu">
@@ -135,6 +161,15 @@
                </div>
             </div>
     </div>
+
+    <script>
+
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
+    
+    </script>
     
 </body>
 </html>

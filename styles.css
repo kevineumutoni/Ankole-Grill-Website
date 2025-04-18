@@ -1,6 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter+Normal);
 
-/* Responsive for mobile devices (general range) */
 @media (max-width: 768px) {
   .ankole-logo {
     width: 150px;
@@ -49,7 +48,6 @@
     }
 
   }
-  /* the whole Ankola website details start here */
 
 *{
     margin: 0;
@@ -62,26 +60,11 @@ body{
 
 }
 
-/* Hamburger button */
 
 
-.hamburger {
-  position: fixed;
-  bottom: 83.5px;
-  left: 27.3%;
-  color: rgb(105, 105, 105);
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 13px;
-  cursor: pointer;
-  z-index: 1001;
-  }
 
-  .hamburger i{
-    font-size: 20px;
-  }
 
-/* the whole body page */
+
 .banner{
     position: relative;
     width: 100%;
@@ -98,12 +81,13 @@ body{
   position: absolute;
   top:60px;
   z-index: 1000;
+
+  gap:5px;
   right: 40px;
   font-size: 30px;
   color: rgb(148, 144, 144);
   border: none;
 }
-/* the cow logo in the website */
 .ankole-logo{
   position: absolute;
   top: 30px;
@@ -113,8 +97,8 @@ body{
   z-index: 10;
   width: 200px;
 }
-/* the div that is shared in all images that will control flow of images in the main page */
-/* each animation will take 25 seconds infinitely non-stop. */
+/* The div that is shared in all images that will control flow of images in the main page */
+/* Each animation will take 25 seconds infinitely non-stop. */
 .home{
     position: absolute;
     width: 100%;
@@ -172,88 +156,9 @@ body{
     color: rgb(138, 136, 136);
 
   }
-  nav{
-    position: fixed;
-    bottom: 60px;
-    width: 45.5%;
-    color: rgb(255, 255, 255);
-    left: 27%;
-    display: flex;
-    justify-content: right;
-    background-color: rgb(14,14,14);
-    border-radius: 25px;
-    /* padding: 0px 10px; */
-    z-index: 10;
-    border-radius: 40px;
-    /* max-width: 1000px; */
-    height: 90px;
-  }
-  #reserve{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(167, 163, 163);
-    /* padding: 8px 14px; */
-    border-radius: 20px;
-    transition: 0.3s ease;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  #reserve:hover{
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-  }
-  #clock{
-    position:absolute;
-    bottom: 83.9px;
-    left: 29.7%;
-    position: fixed;
+ 
 
-    color: rgb(117, 116, 116);
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 2001;
-  }
-  ul{
-    display: flex;
-    justify-content: space-between;
-    gap:10px;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-    padding: 10px;
-    margin: 0;
-  }
-  #menu{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(29, 28, 28);
-    /* padding: 8px 14px; */
-    transition: 0.3s ease;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-   li a{
-    text-decoration: none;
-    color:lightgray;   
-    /* padding: 8px 14px; */
-    border-radius: 1px;
-    transition: 0.3s ease;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  li a:hover{
-    color: gray;
-  }
+ 
   .whatsapp-icon{
     position: absolute;
     right: 60px;
@@ -266,44 +171,16 @@ body{
  
   }
 
+
 /* Mobile  */
 @media (max-width: 1024px) {
-  .hamburger {
-    display: block;
-    color: white;
-  }
-  nav {
-    background: transparent;
-    width: auto;
-  }
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #111;
-    width: 80%;
-    border-radius: 15px;
-    padding: 15px 0;
-  }
-  nav ul.active {
-    display: flex;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-  nav ul li a {
-    width: 100%;
-    display: block;
-  }
+
   .ankole-logo{
-    width: 100px;
-    height: 100px;
+    width: 220px;
+    height: 220px;
   }
   .banner-text h1{
-    font-size: 35px;
+    font-size: 50px;
   }
   .whatsapp-icon{
     position: absolute;
@@ -315,12 +192,191 @@ body{
     display: none;
  
   }
-  #clock{
-    display: none;
-  }
+  
+
+
+  
+  
+
 }
-@media(min-width:1024){
-  nav{
-    display: none;
+
+
+.navlink{
+  position: relative;
+  top:15px
+}
+nav i{
+  position: relative;
+  top:15px
+}
+
+header{
+  position: fixed;
+  bottom: 5%;
+  width: 43%;
+  background-color: black;
+  border-radius: 40px;
+  margin: 0 25%; 
+  z-index: 1;
+  height: 80px;
+  justify-content: right;
+  align-items: left;
+
+  nav {
+      display: flex;
+      align-items: center;
+      gap:14px;
+      width: 100%;
+
+
+      a {
+          text-decoration: none;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          font-weight: bolder;
+          font-size: 17px;
+      }
+
+      a:last-child {
+          background-color: gray;
+          border-radius: 50px;
+      }
+
+      a:last-child:hover {
+          background-color: white;
+          color: black;
+      }
+
+      a:hover {
+          color: gray;
+      }
+
+      i {
+          color: gray;
+          padding: 15px;
+          font-size: 20px;
+          position: relative;
+          cursor: pointer;
+      }
+
+      .menu-toggle{
+          position: relative;
+          display: inline-block;
+
+          .vertical-menu {
+              display: none;
+              position: absolute;
+              bottom: 4em;
+              left: 0;
+              width: 17em;
+              background-color: black;
+              color: white;
+              padding: 0.5em 1em;
+              border-radius: 20px;
+              z-index: 1;
+              text-align: start;
+      
+              a {
+                  border-bottom: 3px solid gray;
+                  display: block;
+                  text-decoration: none;
+                  padding: 0.75em 1em;
+              }
+      
+              a:last-child {
+                  background-color: unset;
+                  border-radius: unset;
+              }
+      
+              a:last-child:hover {
+                  color: gray;
+              }
+          }
+
+          .vertical-menu.show{
+              display: block;
+          }
+      }
+
+      
+
   }
+
+}
+#menu{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(29, 28, 28);
+  /* padding: 8px 14px; */
+  transition: 0.3s ease;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#menu:hover{
+  color: gray;
+}
+
+
+@media  screen and (max-width: 700px)  {
+
+
+  header{
+      width: 80%;
+      margin: 0 10%;
+  }
+  header nav a:not(:last-child){
+      display: none;
+  }
+  .icons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+
+}
+@media only screen and (max-width:1350px) and (min-width:751px){
+  header{
+    margin-left: 0;
+    gap:0px;
+    justify-content: start;
+
+  }
+  .icons{
+    display: flex;
+    flex-direction: column;
+
+  }
+  header{
+    position: fixed;
+    bottom: 5%;
+    width: 95%;
+    background-color: black;
+    border-radius: 40px;
+    margin: 0 1%; 
+    z-index: 1;
+    height: 80px;
+
+  
+    nav {
+        display: flex;
+        align-items: center;
+        gap:1px;
+        width: 100%;
+  
+  
+        a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            font-weight: bolder;
+            font-size: 17px;
+        }
+      }
+}
 }

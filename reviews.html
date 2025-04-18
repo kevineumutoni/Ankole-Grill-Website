@@ -9,12 +9,38 @@
 </head>
 <body>
     <body>
-        <!-- menu -->
-        <i class="fa-solid fa-clock" id="clock"></i>
 
-        <div class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-          </div>
+      <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleDropdown()">
+                <i class="fa-solid fa-bars" ></i>
+                <div class="vertical-menu" id="dropdown">
+                   <a href="index.html">Home</a>
+                   <a href="index.html">Our Story</a>
+                   <a href="menu.html">Menu</a>
+                   <a href="reviews.html">Reviews</a>
+                   <a href="index.html">Careers</a>
+                   <a href="events.html">Events</a>
+                   <a href="index.html">Gallery</a>
+                   <a href="live.html">Live </a>
+                   <a href="contacts.html">Contacts</a>
+                </div>
+
+            </div>
+           
+           <div>
+                <i class="fas fa-clock"></i>
+        
+           </div>
+           <a href="/index.html" class="navlink active">Home</a>
+           <a href="/menu.html" class="navlink" id="menu">Menu</a>
+           <a href="/reviews.html" class="navlink">Reviews</a>
+           <a href="/events.html" class="navlink">Events</a>
+           <a href="/live.html" class="navlink">Live</a>
+           <a href="/contacts.html" class="navlink">Contacts</a>
+           <a href="/reservation.html" class="navlink">Reservations</a>  
+       </nav>
+   </header>
 
     <a href="index.html"><img src="images/ankole-logo.png" class="ankole-logo"></a>
     <a><i class="fa-solid fa-quote-right" id="icon3"></i></a>
@@ -27,9 +53,7 @@
               <div class="review active">
                 <p class="quote">"This place is run by educated, innovative & creative people! The architectural
                     layout, seating, ambience, lighting, cutlery:servings, design; has been impeccably well thought out! 
-                   Even the washroom were excellent! The food was AWESOME! This is surprising considering the fact 
-                   we were there on a Saturday night & they almost had no space! We were extremely well serviced too!
-                    Rare to find such finesse in Kenya! You must go visit them!</p>
+                   Even the washroom were excellent! The food was AWESOME!  
                 <p class="author">Irfan Virji <br> KITISIRU</p>
               </div>
               <div class="review">
@@ -46,24 +70,14 @@
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
           </div>
-          <nav>
-            <ul id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" id="menu">Menu</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="live.html">Live</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="reservation.html" id="reserve">Reservations</a></li>
-            </ul>
-        </nav>
           
           
           <script>
          //menu that will appear in small devices only!!.
-            function toggleMenu() {
-                document.getElementById("navLinks").classList.toggle("active");
-              }
+         function toggleDropdown() {
+          const dropdown = document.getElementById("dropdown");
+          dropdown.classList.toggle("show");
+      }
 
             const reviews = document.querySelectorAll(".review");
             const nextBtn = document.querySelector(".next");
@@ -91,7 +105,7 @@
             setInterval(() => {
             currentReview = (currentReview + 1) % reviews.length;
             showReview(currentReview);
-            },10000);
+            },5000);
           </script>
         
 </body>

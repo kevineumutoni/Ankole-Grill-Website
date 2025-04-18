@@ -9,16 +9,44 @@
 
 </head>
 <body>
+
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleDropdown()">
+                <i class="fa-solid fa-bars" ></i>
+                <div class="vertical-menu" id="dropdown">
+                   <a href="index.html">Home</a>
+                   <a href="index.html">Our Story</a>
+                   <a href="menu.html">Menu</a>
+                   <a href="reviews.html">Reviews</a>
+                   <a href="index.html">Careers</a>
+                   <a href="events.html">Events</a>
+                   <a href="index.html">Gallery</a>
+                   <a href="live.html">Live </a>
+                   <a href="contacts.html">Contacts</a>
+                </div>
+
+            </div>
+           
+           <div>
+                <i class="fas fa-clock"></i>
+        
+           </div>
+           <a href="/index.html" class="navlink active">Home</a>
+           <a href="/menu.html" class="navlink" id="menu">Menu</a>
+           <a href="/reviews.html" class="navlink">Reviews</a>
+           <a href="/events.html" class="navlink">Events</a>
+           <a href="/live.html" class="navlink">Live</a>
+           <a href="/contacts.html" class="navlink">Contacts</a>
+           <a href="/reservation.html" class="navlink">Reservations</a>  
+       </nav>
+   </header>
+
     <div class="live-text">
         <h1>Tukatike</h1>
         <p>Live</p>
     </div>
 
-    <i class="fa-solid fa-clock" id="clock"></i>
-
-    <div class="hamburger" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
     <a href="index.html"><img src="images/ankole-logo.png" class="ankole-logo"></a>
 
     <div class="live-section">
@@ -52,7 +80,6 @@
             </div>
         </a>
         </div>
-        <!--  -->
         <div class="live3">
             <a href="women-song.html">
             <div class="live-img3"><img src="images/women.jpg"></div>
@@ -61,24 +88,15 @@
                 <h1>Live Acoustic<br> Wednesday - FADHILEE</h1>
             </div>
             </a>
-        <nav>
-            <ul id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" id="menu">Menu</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="live.html">Live</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="reservation.html" id="reserve">Reservations</a></li>
-            </ul>
-        </nav>
 
     </div>
     <script>
-        //menu that will appear in small devices only!!.
-           function toggleMenu() {
-               document.getElementById("navLinks").classList.toggle("active");
-             }
+
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
+    
     </script>
 
 </body>
