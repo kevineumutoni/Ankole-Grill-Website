@@ -22,12 +22,12 @@
 }
 .hamburger {
     position: fixed;
-    bottom: 70px;
+    bottom: 77px;
     left: 27.3%;
     color: rgb(105, 105, 105);
     padding: 10px;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: lighter;
     cursor: pointer;
     z-index: 1001;
@@ -129,14 +129,14 @@ nav{
     z-index: 10;
     border-radius: 30px;
     /* max-width: 1000px; */
-    height: 70px;
+    height: 80px;
   }
   #reserve{
     text-decoration: none;
     color: white;
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(167, 163, 163);
     /* padding: 8px 14px; */
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
@@ -150,13 +150,13 @@ nav{
   }
   #clock{
     position:absolute;
-    bottom: 71px;
+    bottom: 81px;
     left: 29.9%;
 
     color: rgb(117, 116, 116);
     padding: 10px;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     z-index: 2001;
   }
@@ -202,6 +202,17 @@ nav{
 }
 body{
     margin: 0;
+}
+#menu{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(29, 28, 28);
+  /* padding: 8px 14px; */
+  transition: 0.3s ease;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* @media (max-width: 602px) {

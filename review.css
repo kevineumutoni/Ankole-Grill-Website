@@ -68,9 +68,9 @@
   #reserve{
     text-decoration: none;
     color: white;
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(167, 163, 163);
     /* padding: 8px 14px; */
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
@@ -84,13 +84,13 @@
   }
   #clock{
     position:absolute;
-    bottom: 69px;
-    left: 29.7%;
+    bottom: 74px;
+    left: 29.9%;
 
     color: rgb(117, 116, 116);
     padding: 10px;
     border-radius: 50%;
-    font-size: 27px;
+    font-size: 20px;
     cursor: pointer;
     z-index: 2001;
   }
@@ -159,8 +159,8 @@
   }
   .hamburger {
     position: fixed;
-    bottom: 68.5px;
-    left: 27.3%;
+    bottom: 72.5px;
+    left: 27.4%;
     color: rgb(105, 105, 105);
     padding: 10px;
     border-radius: 50%;
@@ -171,8 +171,20 @@
     }
   
     .hamburger i{
-      font-size: 30px;
+      font-size: 20px;
     }
+    #menu{
+      text-decoration: none;
+      color: white;
+      background-color: rgb(29, 28, 28);
+      /* padding: 8px 14px; */
+      transition: 0.3s ease;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
   
   /* Responsive */
   @media (max-width: 480px) {

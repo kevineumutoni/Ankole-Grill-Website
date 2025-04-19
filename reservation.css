@@ -95,9 +95,9 @@ nav{
   #reserve{
     text-decoration: none;
     color: white;
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(167, 163, 163);
     /* padding: 8px 14px; */
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
@@ -111,14 +111,14 @@ nav{
   }
   #clock{
     position:absolute;
-    bottom: 13.8px;
+    bottom: 15px;
     left: 5%;
     position: fixed;
 
     color: rgb(117, 116, 116);
     padding: 10px;
     border-radius: 50%;
-    font-size: 27px;
+    font-size: 23px;
     cursor: pointer;
     z-index: 2001;
   }
@@ -148,16 +148,27 @@ nav{
   }
   .hamburger {
     position: fixed;
-    bottom: 13px;
+    bottom: 14px;
     left: 2.9%;
     color: rgb(105, 105, 105);
     padding: 10px;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 23px;
 
     font-weight: lighter;
     cursor: pointer;
     z-index: 1001;
+    }
+    #menu{
+      text-decoration: none;
+      color: white;
+      background-color: rgb(29, 28, 28);
+      /* padding: 8px 14px; */
+      transition: 0.3s ease;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
     }
     @media (max-width: 1024px) {
         .hamburger {

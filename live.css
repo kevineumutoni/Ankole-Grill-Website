@@ -50,6 +50,15 @@ body{
     left:60%;
 
 }
+.live1 a{
+  text-decoration: none;
+}
+.live2 a{
+  text-decoration: none;
+}
+.live3 a{
+  text-decoration: none;
+}
 .live-details1{
     width: 100%;
     color: wheat;
@@ -134,9 +143,9 @@ nav{
   #reserve{
     text-decoration: none;
     color: white;
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(167, 163, 163);
     /* padding: 8px 14px; */
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s ease;
     padding: 10px 20px;
     font-size: 20px;
@@ -150,17 +159,30 @@ nav{
   }
   #clock{
     position:absolute;
-    bottom: 53.5px;
+    bottom: 54px;
     left: 4.9%;
     position: fixed;
 
     color: rgb(117, 116, 116);
     padding: 10px;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 21px;
     cursor: pointer;
     z-index: 2001;
   }
+
+  #menu{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(29, 28, 28);
+    /* padding: 8px 14px; */
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
   ul{
     display: flex;
     justify-content: space-between;
@@ -187,7 +209,7 @@ nav{
   }
   .hamburger {
     position: fixed;
-    bottom: 53px;
+    bottom: 52px;
     left: 2.5%;
     color: rgb(105, 105, 105);
     padding: 10px;
